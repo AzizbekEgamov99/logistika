@@ -1,0 +1,53 @@
+{
+  "name": "my-next-ts-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "cross-env DISABLE_ESLINT_PLUGIN=true DISABLE_TYPE_CHECK=true next build",
+    "start": "next start",
+    "lint": "next lint --max-warnings=9999"
+  },
+  "dependencies": {
+    "@ant-design/charts": "^2.2.7",
+    "@ant-design/icons": "^5.6.1",
+    "@ant-design/plots": "^2.3.3",
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "@hookform/resolvers": "^4.1.0",
+    "@reduxjs/toolkit": "^2.5.1",
+    "@tanstack/react-query": "^5.66.9",
+    "antd": "^5.24.1",
+    "apexcharts": "^4.7.0",
+    "axios": "^1.7.9",
+    "chart.js": "^4.4.8",
+    "chartjs": "^0.3.24",
+    "critters": "^0.0.25",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.7",
+    "framer-motion": "^12.4.7",
+    "moment": "^2.30.1",
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-apexcharts": "^1.7.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-redux": "^9.2.0",
+    "recharts": "^2.15.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@next/eslint-plugin-next": "^15.2.2",
+    "@types/node": "^20.17.24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.20.1",
+    "eslint-config-next": "15.1.7",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.5.1",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,188 @@
+.freight-detail-container {
+  padding: 24px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  background-color: #fff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left h3 {
+  margin: 0;
+}
+
+.detail-tabs {
+  margin-top: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trip-info-card {
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.trip-info-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.vehicle-card .ant-descriptions-item-label {
+  width: 120px;
+}
+
+.stat-card {
+  padding: 16px;
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-footer {
+  margin-top: 16px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+}
+
+.timeline-card .ant-timeline {
+  padding: 12px;
+}
+
+.clients-card {
+  margin-bottom: 16px;
+}
+
+.clients-collapse {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.clients-collapse .ant-collapse-header {
+  padding: 16px 24px !important;
+  background-color: #f9f9f9;
+  transition: all 0.3s;
+}
+
+.clients-collapse .ant-collapse-header:hover {
+  background-color: #f0f7ff;
+}
+
+.clients-collapse .ant-collapse-content {
+  border-top: 1px solid #f0f0f0;
+}
+
+.clients-collapse .ant-collapse-content-box {
+  padding: 24px;
+}
+
+.products-table {
+  margin-top: 16px;
+}
+
+.expenses-summary-card {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expenses-collapse {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expenses-collapse .ant-collapse-header {
+  padding: 16px 24px !important;
+  font-weight: 500;
+  background-color: #f9f9f9;
+  transition: all 0.3s;
+}
+
+.expenses-collapse .ant-collapse-header:hover {
+  background-color: #f0f7ff;
+}
+
+.expenses-collapse .ant-collapse-content-box {
+  padding: 16px !important;
+}
+
+.trip-overview .ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0;
+}
+
+.expenses-tab .ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.expenses-tab .ant-collapse-item:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hover effects for panels */
+.clients-collapse .ant-collapse-item:hover .ant-collapse-header,
+.expenses-collapse .ant-collapse-item:hover .ant-collapse-header {
+  background-color: #e6f7ff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-right {
+    margin-top: 16px;
+  }
+  
+  .timeline-card .ant-timeline {
+    padding: 0;
+  }
+
+  .stat-card {
+    margin-bottom: 16px;
+  }
+  
+  .clients-collapse .ant-collapse-header,
+  .expenses-collapse .ant-collapse-header {
+    padding: 12px 16px !important;
+  }
+  
+  .clients-collapse .ant-collapse-content-box,
+  .expenses-collapse .ant-collapse-content-box {
+    padding: 16px !important;
+  }
+} 

@@ -1,0 +1,918 @@
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px 16px;
+  max-width: 1600px;
+  margin: 0 auto;
+  color: #1f2937;
+}
+
+/* Section styles */
+.dashboard-section {
+  margin-bottom: 32px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.section-header h4 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.section-header h4 .anticon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.date-range-container {
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Card styles */
+.dashboard-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.dashboard-card .ant-card-body {
+  padding: 20px;
+}
+
+/* Specific card styles */
+.financial-summary-card {
+  background: #ffffff;
+  border-left: 4px solid #1890ff;
+}
+
+.financial-summary-card:nth-child(2) {
+  border-left-color: #ff6384;
+}
+
+.financial-summary-card:nth-child(3) {
+  border-left-color: #4bc0c0;
+}
+
+.expense-chart-card {
+  background: #ffffff;
+}
+
+.expense-analysis-card {
+  background: #ffffff;
+}
+
+.monthly-income-card {
+  background: #ffffff;
+  border: none;
+}
+
+/* Grid layout */
+.dashboard-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px 24px;
+}
+
+.dashboard-column {
+  flex: 0 0 100%;
+  padding: 0 12px;
+  margin-bottom: 24px;
+}
+
+.dashboard-column.left {
+  flex: 0 0 50%;
+}
+
+.dashboard-column.right {
+  flex: 0 0 50%;
+}
+
+.dashboard-column.full-width {
+  flex: 0 0 100%;
+}
+
+/* Metrics styling */
+.percentage-change {
+  margin-top: 12px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.percentage-up {
+  color: #52c41a;
+  display: flex;
+  align-items: center;
+}
+
+.percentage-down {
+  color: #f5222d;
+  display: flex;
+  align-items: center;
+}
+
+.financial-metrics {
+  margin-top: 16px;
+}
+
+.financial-metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.metric-title {
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+}
+
+.metric-value {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.expense-metric {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.metric-label {
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+}
+
+.metric-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Chart containers */
+.chart-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading and empty states */
+.loading-container, 
+.monthly-chart-container.loading,
+.monthly-chart-container.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .dashboard-column.left,
+  .dashboard-column.right {
+    flex: 0 0 100%;
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Statistics row styling */
+.statistics-row {
+  margin-bottom: 20px;
+}
+
+/* Card title styling */
+.ant-card-head-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+/* Ant design overrides */
+.ant-statistic-title {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.ant-statistic-content {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.ceo-dashboard {
+  padding: 16px;
+}
+
+.ceo-dashboard .ant-card {
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.ceo-dashboard .ant-statistic-title {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.ceo-dashboard .ant-statistic-content-value {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.ceo-dashboard .ant-card-head-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ceo-dashboard .ant-progress-text {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .ceo-dashboard {
+    padding: 8px;
+  }
+
+  .ceo-dashboard .ant-statistic-content-value {
+    font-size: 20px;
+  }
+}
+
+.dashboard-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+
+.dashboard-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  background: #fff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-welcome h1 {
+  margin-bottom: 4px;
+  font-size: 24px;
+}
+
+.dashboard-welcome p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.dashboard-section {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.kpi-card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+}
+
+.kpi-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.kpi-trend {
+  margin-top: 12px;
+}
+
+.dashboard-card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-row {
+  margin-bottom: 24px;
+}
+
+.financial-summary,
+.expenses-summary {
+  margin-bottom: 16px;
+}
+
+.financial-insights {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.expenses-breakdown-legend {
+  margin-top: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.legend-label {
+  font-size: 12px;
+}
+
+.trips-stats-container {
+  padding: 8px;
+}
+
+.stat-card {
+  text-align: center;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.trip-types-container,
+.trip-metrics-container {
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.trip-type-item {
+  margin-bottom: 12px;
+}
+
+.trip-type-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.trip-type-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.trip-type-count {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.trip-metric-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.trip-metric-label {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.trip-metric-value {
+  font-weight: 500;
+}
+
+.trip-metric-chart {
+  margin-top: 16px;
+}
+
+.financial-chart-card {
+  padding: 16px;
+  background: linear-gradient(to bottom, #fcfcfc, #f9f9f9);
+}
+
+.financial-chart-header {
+  margin-bottom: 16px;
+}
+
+.financial-chart-legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 24px;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.summary-label {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 4px;
+}
+
+.summary-value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.financial-analysis-card {
+  background: linear-gradient(135deg, #fff, #f7f7f7);
+  height: 100%;
+}
+
+.financial-metric {
+  margin-bottom: 12px;
+}
+
+.metric-title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.financial-period {
+  margin-top: 24px;
+  padding: 12px;
+  background: rgba(24, 144, 255, 0.05);
+  border-radius: 4px;
+}
+
+.period-label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 4px;
+}
+
+.period-value {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.top-drivers-container {
+  padding: 8px;
+}
+
+.driver-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  position: relative;
+  height: 100%;
+  transition: all 0.3s;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.driver-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  border-color: #1890ff;
+}
+
+.driver-card:hover .view-details {
+  opacity: 1;
+}
+
+.view-details {
+  margin-top: 10px;
+  color: #1890ff;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.driver-rank {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #1890ff;
+  color: white;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.driver-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.driver-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.driver-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1890ff;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.driver-info {
+  text-align: center;
+  width: 100%;
+}
+
+.driver-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.driver-phone {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 12px;
+}
+
+.driver-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 2px;
+}
+
+.stat-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.loading-container {
+  width: 100%;
+  text-align: center;
+  padding: 24px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.expense-chart-card,
+.expense-analysis-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.expense-chart-header {
+  padding: 0 0 8px 0;
+}
+
+.expense-chart-container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.expense-legend {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.legend-item {
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.legend-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.legend-color-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.legend-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.legend-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.legend-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.legend-percent {
+  font-size: 12px;
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.expense-metric {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.metric-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 8px;
+}
+
+.metric-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #cf1322;
+}
+
+.expense-breakdown {
+  margin-top: 20px;
+}
+
+.breakdown-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.breakdown-item {
+  margin-bottom: 16px;
+}
+
+.breakdown-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.breakdown-name {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.breakdown-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.breakdown-value {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.breakdown-bar-container {
+  width: 100%;
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.breakdown-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.client-payment-card,
+.payment-analysis-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.payment-chart-header {
+  padding: 0 0 8px 0;
+}
+
+.payment-chart-container {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.payment-pie-chart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.donut-chart {
+  position: relative;
+}
+
+.no-data {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 16px;
+  text-align: center;
+}
+
+.payment-stats {
+  margin-top: 20px;
+}
+
+.paid-stats,
+.unpaid-stats {
+  text-align: center;
+  padding: 12px;
+}
+
+.paid-stats {
+  background-color: rgba(82, 196, 26, 0.1);
+}
+
+.unpaid-stats {
+  background-color: rgba(245, 34, 45, 0.1);
+}
+
+.stats-value {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.paid-stats .stats-value {
+  color: #52c41a;
+}
+
+.unpaid-stats .stats-value {
+  color: #f5222d;
+}
+
+.stats-label {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.payment-metric {
+  margin-bottom: 16px;
+}
+
+.metric-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 8px;
+}
+
+.metric-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.payment-summary {
+  margin-top: 20px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+
+.success-message {
+  color: #52c41a;
+  font-weight: 500;
+  margin-top: 8px;
+}

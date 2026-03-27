@@ -1,0 +1,23 @@
+.notificationsModal :global(.ant-modal-content) {
+    border-radius: 12px;
+}
+.notificationItem {
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.notificationItem:hover {
+    background-color: #f5f5f5;
+}
+.notificationItem.unread {
+    background-color: #e6f7ff;
+}
+.notificationTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.notificationTime {
+    font-size: 12px;
+    color: #8c8c8c;
+}

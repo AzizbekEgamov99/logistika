@@ -1,0 +1,194 @@
+.clientHistoryPage {
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.content {
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.breadcrumb {
+  margin-bottom: 16px;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.pageTitle {
+  margin-bottom: 4px !important;
+}
+
+.loadingContainer, 
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  gap: 16px;
+}
+
+.loadingText {
+  margin-top: 16px;
+}
+
+.clientInfoCard {
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.clientProfile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.clientAvatar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.clientName {
+  margin: 0 0 4px 0 !important;
+}
+
+.companyTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+.divider {
+  margin: 16px 0;
+}
+
+.contactInfo {
+  margin-top: 16px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px !important;
+}
+
+.statCard {
+  height: 100%;
+  background-color: #f9fbff;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.statCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.historyCard {
+  margin-top: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.historyTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.timeline {
+  margin-top: 24px;
+  padding: 0 16px;
+}
+
+.timelineCard {
+  margin-bottom: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 3px solid #1890ff;
+}
+
+.timelineCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.reysSummary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.reysId {
+  font-weight: bold;
+  color: #1890ff;
+  min-width: 80px;
+}
+
+.reysRoute {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.fromLocation, .toLocation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.routeArrow {
+  color: #1890ff;
+}
+
+.reysDate {
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.detailsButton {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .backButton {
+    align-self: flex-start;
+  }
+  
+  .reysSummary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .reysRoute {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .routeArrow {
+    transform: rotate(90deg);
+    margin: 4px 0;
+  }
+} 

@@ -1,0 +1,197 @@
+/* Any Drivers module-specific styles that aren't covered by the global styles */
+.driverAvatar {
+  position: relative;
+}
+
+.statusBadge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.driverInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.driverName {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.driverPhone {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.tripTag {
+  font-size: 11px;
+}
+
+/* Layout */
+.driversPage {
+  min-height: 100vh;
+}
+
+.driversContent {
+  padding: 16px;
+}
+
+/* Header section */
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.pageTitle {
+  margin-bottom: 4px !important;
+}
+
+/* Main card */
+.mainCard {
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+/* Tabs */
+.driversTabs {
+  margin-bottom: 16px;
+}
+
+/* Statistics cards */
+.statsCards {
+  margin-bottom: 24px;
+}
+
+.statCard {
+  height: 100%;
+  border-radius: 8px;
+  transition: all 0.3s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.statIcon {
+  background-color: #1677ff !important;
+  margin-right: 16px;
+}
+
+.statActiveIcon {
+  background-color: #52c41a !important;
+  margin-right: 16px;
+}
+
+.statRouteIcon {
+  background-color: #722ed1 !important;
+  margin-right: 16px;
+}
+
+/* Top drivers card */
+.topDriversCard {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.tableControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.searchInput {
+  width: 300px;
+}
+
+.driversTable {
+  margin-top: 16px;
+}
+
+/* Card view styling */
+.cardsGrid {
+  margin-top: 16px;
+}
+
+.driverCard {
+  border-radius: 8px;
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.driverCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.driverAvatar {
+  margin-bottom: 16px;
+}
+
+.driverName {
+  margin: 8px 0 !important;
+}
+
+.driverDetails {
+  width: 100%;
+  text-align: left;
+  margin-top: 16px;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.cardsPagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding: 16px 0;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+  .pageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .pageHeader > button {
+    margin-top: 16px;
+    align-self: flex-start;
+  }
+  
+  .tableControls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .searchInput {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .driversContent {
+    padding: 8px;
+  }
+  
+  .mainCard {
+    border-radius: 0;
+  }
+} 

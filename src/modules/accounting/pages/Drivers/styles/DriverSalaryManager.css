@@ -1,0 +1,39 @@
+.driver-salary-manager {
+  margin-bottom: 24px;
+}
+
+.salary-stats-row {
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  overflow: hidden;
+  border: none;
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.action-card {
+  border-top: 4px solid #52c41a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .salary-stats-row {
+    margin-bottom: 16px;
+  }
+  
+  .summary-card {
+    margin-bottom: 16px;
+  }
+} 

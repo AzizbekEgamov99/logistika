@@ -1,0 +1,61 @@
+/* Reys tarixi sahifasi uchun uslublar */
+.trip-history {
+  padding: 24px;
+}
+
+.trip-history-header {
+  margin-bottom: 24px;
+}
+
+.trip-history-filters {
+  margin-bottom: 20px;
+}
+
+.trip-history-table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.trip-card {
+  height: 100%;
+}
+
+.trip-card .ant-card-body {
+  padding: 16px;
+}
+
+.route-info {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.driver-info p {
+  margin-bottom: 8px;
+}
+
+.price-info p {
+  margin-bottom: 8px;
+}
+
+.trip-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.section-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+} 

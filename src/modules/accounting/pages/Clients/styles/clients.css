@@ -1,0 +1,159 @@
+.clientsPage {
+    padding: 24px;
+    background-color: #fff;
+}
+.clientsPage .header {
+    margin-bottom: 24px;
+}
+.clientsPage .statsCards {
+    margin-bottom: 24px;
+}
+.clientsPage .statsCards .statCard {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.clientsPage .statsCards .statCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.clientsPage .statsCards .statCard .icon {
+    font-size: 24px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.clientsPage .statsCards .statCard .icon.blue {
+    background-color: #e6f7ff;
+    color: #1890ff;
+}
+.clientsPage .statsCards .statCard .icon.green {
+    background-color: #f6ffed;
+    color: #52c41a;
+}
+.clientsPage .statsCards .statCard .icon.gold {
+    background-color: #fffbe6;
+    color: #faad14;
+}
+.clientsPage .statsCards .statCard .icon.red {
+    background-color: #fff1f0;
+    color: #f5222d;
+}
+.clientsPage .clientCard {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.clientsPage .clientCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.clientsPage .clientCard .logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    margin-right: 16px;
+}
+.clientsPage .clientCard .logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.clientsPage .clientCard .info {
+    flex: 1;
+}
+.clientsPage .clientCard .info .name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.clientsPage .clientCard .info .type {
+    font-size: 12px;
+    color: #8c8c8c;
+}
+.clientsPage .clientCard .contacts {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+}
+.clientsPage .clientCard .contacts .contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.clientsPage .clientCard .contacts .contact .icon {
+    margin-right: 8px;
+    color: #8c8c8c;
+}
+.clientsPage .detailsDrawer .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.clientsPage .detailsDrawer .section {
+    margin-bottom: 24px;
+}
+.clientsPage .detailsDrawer .section .title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #262626;
+}
+.clientsPage .detailsDrawer .contactCard {
+    background-color: #fafafa;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.clientsPage .detailsDrawer .contactCard .name {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.clientsPage .detailsDrawer .contactCard .position {
+    color: #8c8c8c;
+    margin-bottom: 8px;
+}
+.clientsPage .detailsDrawer .contractCard {
+    background-color: #fafafa;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.clientsPage .detailsDrawer .contractCard .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.clientsPage .detailsDrawer .contractCard .header .number {
+    font-weight: 500;
+}
+.clientsPage .detailsDrawer .contractCard .header .status {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.clientsPage .detailsDrawer .contractCard .dates {
+    color: #8c8c8c;
+    margin-bottom: 8px;
+}
+.clientsPage .detailsDrawer .contractCard .amount {
+    font-weight: 500;
+    color: #262626;
+}
+.fadeIn {
+    animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+   }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+   }
+}

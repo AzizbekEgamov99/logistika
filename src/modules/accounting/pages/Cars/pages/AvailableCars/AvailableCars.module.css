@@ -1,0 +1,63 @@
+.availableCarsContainer {
+  padding: 0;
+}
+
+.carImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.carInfoCard {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.carInfoCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.statusTag {
+  margin-left: 8px;
+}
+
+.carDetailsSection {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  margin-bottom: 8px;
+}
+
+.detailIcon {
+  margin-right: 8px;
+  color: #1890ff;
+}
+
+.searchInput {
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .carImage {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .detailItem {
+    margin-right: 16px;
+  }
+} 

@@ -1,0 +1,120 @@
+.trip-add-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-card {
+  margin-bottom: 16px;
+  background-color: #fafafa;
+}
+
+.section-card .ant-card-head {
+  font-weight: 500;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.client-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.client-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.client-card .ant-card-body {
+  padding: 0;
+}
+
+.client-card .ant-tabs-content {
+  padding: 16px;
+}
+
+.client-card .ant-card-head {
+  background-color: #f0f7ff;
+}
+
+.client-selection {
+  margin-bottom: 16px;
+}
+
+.empty-clients-message,
+.empty-products-message {
+  padding: 24px;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+
+.selected-clients-container {
+  margin-top: 24px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-label {
+  color: #8c8c8c;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.product-busy {
+  background-color: #fff1f0;
+  opacity: 0.8;
+}
+
+/* Mahsulotlar ro'yxati stili */
+.products-header {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .trip-add-container {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .client-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .client-header button {
+    margin-top: 8px;
+  }
+}

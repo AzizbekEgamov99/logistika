@@ -1,0 +1,51 @@
+/* Driver on road specific styles */
+.drivers-on-road .info-card {
+  border-left: 4px solid #1890ff;
+}
+
+.drivers-on-road-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.drivers-on-road-card .ant-table-thead > tr > th {
+  background-color: #f5f7fa;
+  color: #333;
+  font-weight: 600;
+}
+
+.drivers-on-road-card .ant-table-tbody > tr:hover > td {
+  background-color: #f0f7ff;
+}
+
+/* Route visualization */
+.route-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.route-point {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.route-line-vertical {
+  width: 2px;
+  height: 24px;
+  background-color: #1890ff;
+  margin: 0 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .drivers-on-road-card .ant-card-head-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .drivers-on-road-card .ant-card-extra {
+    margin-top: 12px;
+    width: 100%;
+  }
+} 

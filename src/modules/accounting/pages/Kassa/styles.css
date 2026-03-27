@@ -1,0 +1,1848 @@
+.kassa-page {
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.kassa-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.kassa-header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kassa-card {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+}
+
+.kassa-page-header {
+  margin-bottom: 24px;
+}
+
+.kassa-page-header h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.kassa-tabs {
+  margin-bottom: 1.5rem;
+}
+
+.kassa-tabs .ant-tabs-nav {
+  margin-bottom: 24px;
+  padding: 0 16px;
+  position: relative;
+}
+
+.kassa-tabs .ant-tabs-nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #f0f0f0;
+}
+
+.kassa-tabs .ant-tabs-tab {
+  padding: 16px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s;
+  margin-right: 24px;
+}
+
+.kassa-tabs .ant-tabs-tab-active {
+  font-weight: 600;
+}
+
+.kassa-tabs .ant-tabs-tab:hover {
+  color: #1890ff;
+}
+
+.kassa-tabs .ant-tabs-ink-bar {
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #1890ff, #69c0ff);
+}
+
+.kassa-summary-card {
+  position: relative;
+  padding: 24px;
+  height: 140px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.kassa-summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.summary-card-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+  opacity: 0.2;
+}
+
+.summary-card-title {
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.summary-card-value {
+  margin: 0;
+  font-size: 28px;
+}
+
+.summary-card-subtitle {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+}
+
+.summary-card-balance {
+  background: linear-gradient(135deg, #e6f7ff, #ffffff);
+  border-left: 4px solid #1890ff;
+}
+
+.summary-card-balance .summary-card-icon {
+  color: #1890ff;
+}
+
+.summary-card-income {
+  background: linear-gradient(135deg, #f6ffed, #ffffff);
+  border-left: 4px solid #52c41a;
+}
+
+.summary-card-income .summary-card-icon {
+  color: #52c41a;
+}
+
+.summary-card-expense {
+  background: linear-gradient(135deg, #fff1f0, #ffffff);
+  border-left: 4px solid #f5222d;
+}
+
+.summary-card-expense .summary-card-icon {
+  color: #f5222d;
+}
+
+.summary-card-debt {
+  background: linear-gradient(135deg, #f9f0ff, #ffffff);
+  border-left: 4px solid #722ed1;
+}
+
+.summary-card-debt .summary-card-icon {
+  color: #722ed1;
+}
+
+.kassa-chart-card {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.currency-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border-left: 3px solid #1890ff;
+}
+
+.client-table-action {
+  display: flex;
+  justify-content: center;
+}
+
+.client-filter-row {
+  margin-bottom: 16px;
+}
+
+.debt-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 1;
+}
+
+.client-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.client-card-pending {
+  border-left: 4px solid #faad14;
+}
+
+.client-card-paid {
+  border-left: 4px solid #52c41a;
+}
+
+.client-card-overdue {
+  border-left: 4px solid #f5222d;
+}
+
+.client-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+  margin-right: 16px;
+}
+
+.client-info {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.client-details {
+  flex: 1;
+}
+
+.client-amount {
+  text-align: right;
+}
+
+.client-card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.driver-payment-card {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.driver-payment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.driver-payment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.driver-payment-avatar {
+  margin-right: 16px;
+}
+
+.driver-payment-info {
+  flex: 1;
+}
+
+.driver-payment-amount {
+  text-align: right;
+}
+
+.driver-payment-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.driver-payment-row {
+  margin-bottom: 16px;
+}
+
+.driver-payment-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.payment-status-paid {
+  color: #52c41a;
+}
+
+.payment-status-partial {
+  color: #faad14;
+}
+
+.payment-status-pending {
+  color: #f5222d;
+}
+
+.trip-payment-row {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.trip-payment-row:last-child {
+  border-bottom: none;
+}
+
+.trip-payment-meta {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+}
+
+.trip-payment-amount {
+  font-weight: 500;
+}
+
+.trip-payment-status-completed {
+  color: #52c41a;
+}
+
+.trip-payment-status-inProgress {
+  color: #1890ff;
+}
+
+.trip-payment-status-planned {
+  color: #722ed1;
+}
+
+.payment-history-card {
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.payment-detail-table {
+  margin-top: 16px;
+}
+
+.payment-detail-amount {
+  font-weight: 500;
+}
+
+.payment-type-card {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.payment-type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.payment-type-icon {
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.payment-type-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.payment-type-info {
+  flex: 1;
+}
+
+.payment-type-amount {
+  text-align: right;
+}
+
+.payment-type-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.payment-type-stats {
+  margin-top: 16px;
+}
+
+.payment-type-progress-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.payment-type-progress {
+  margin-bottom: 16px;
+}
+
+.transaction-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.transaction-filter-form {
+  margin-bottom: 16px;
+}
+
+.transaction-card {
+  border-radius: 8px;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.transaction-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.transaction-card-income {
+  border-left: 4px solid #52c41a;
+}
+
+.transaction-card-expense {
+  border-left: 4px solid #f5222d;
+}
+
+.transaction-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.transaction-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.transaction-icon-income {
+  background-color: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.transaction-icon-expense {
+  background-color: rgba(245, 34, 45, 0.1);
+  color: #f5222d;
+}
+
+.transaction-info {
+  flex: 1;
+}
+
+.transaction-amount {
+  text-align: right;
+  font-weight: 500;
+}
+
+.transaction-amount-income {
+  color: #52c41a;
+}
+
+.transaction-amount-expense {
+  color: #f5222d;
+}
+
+.transaction-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 8px;
+}
+
+.transaction-status {
+  font-size: 12px;
+}
+
+.transaction-status-confirmed {
+  color: #52c41a;
+}
+
+.transaction-status-pending {
+  color: #faad14;
+}
+
+.transaction-status-cancelled {
+  color: #f5222d;
+}
+
+.transaction-empty {
+  text-align: center;
+  padding: 32px;
+}
+
+.transaction-empty-icon {
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.25);
+  margin-bottom: 16px;
+}
+
+.transaction-pagination {
+  text-align: right;
+  margin-top: 16px;
+}
+
+/* Fix Spin component issue */
+.ant-spin-nested-loading {
+  position: relative;
+}
+
+.ant-spin-nested-loading > div > .ant-spin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-spin-nested-loading > div > .ant-spin .ant-spin-text {
+  display: block;
+  margin-top: 8px;
+}
+
+/* Make cards consistent */
+.ant-card {
+  border-radius: 12px;
+}
+
+.driver-trips-card .ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+/* Make buttons consistent */
+.ant-btn {
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal styling */
+.ant-modal-content {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ant-modal-header {
+  padding: 16px 24px;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-modal-body {
+  padding: 24px;
+}
+
+.ant-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+/* Forms styling */
+.ant-form-item-label > label {
+  font-weight: 500;
+}
+
+/* Descriptions for transaction details */
+.descriptions {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.descriptions.bordered {
+  border: 1px solid #f0f0f0;
+}
+
+.description-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.description-item:last-child {
+  border-bottom: none;
+}
+
+.description-label {
+  color: #8c8c8c;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.chart-container {
+  height: 350px;
+  margin-top: 16px;
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0 24px;
+}
+
+.ant-card-head-title {
+  padding: 16px 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ant-card-body {
+  padding: 24px;
+}
+
+.ant-select-selector {
+  border-radius: 8px !important;
+}
+
+.ant-input, .ant-input-number, .ant-picker {
+  border-radius: 8px !important;
+}
+
+.ant-btn {
+  border-radius: 8px;
+  font-weight: 500;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(to right, #1890ff, #40a9ff);
+  border: none;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(to right, #096dd9, #1890ff);
+  box-shadow: 0 6px 16px rgba(24, 144, 255, 0.4);
+}
+
+.ant-divider-inner-text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #262626;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .kassa-page {
+    padding: 16px;
+  }
+  
+  .kassa-summary-card {
+    height: 140px;
+    padding: 16px;
+  }
+  
+  .summary-card-value {
+    font-size: 24px !important;
+  }
+  
+  .kassa-tabs .ant-tabs-tab {
+    padding: 12px 16px;
+    font-size: 14px;
+    margin-right: 16px;
+  }
+
+  .ant-card-body {
+    padding: 16px;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+}
+
+/* Fix for EyeOutlined icon missing */
+.ant-btn-icon-only > * {
+  font-size: 16px;
+}
+
+/* KassaOverview component styles */
+.kassa-overview {
+  padding: 1rem 0;
+}
+
+.kassa-data-filter {
+  margin-bottom: 1.5rem;
+}
+
+.kassa-balance-card,
+.total-card,
+.expenses-card,
+.balance-card,
+.expenses-detail-card {
+  height: 100%;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.kassa-balance-card:hover,
+.total-card:hover,
+.expenses-card:hover,
+.balance-card:hover,
+.expenses-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.kassa-balance-card {
+  border-top: 4px solid #1890ff;
+}
+
+.total-card {
+  border-top: 4px solid #52c41a;
+}
+
+.expenses-card {
+  border-top: 4px solid #f5222d;
+}
+
+.balance-card {
+  border-top: 4px solid #722ed1;
+}
+
+.expenses-detail-card {
+  border-top: 4px solid #fa8c16;
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+  .kassa-page {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Dashboard Style */
+.dashboard-style {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-title h4 {
+  margin: 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.dashboard-footer {
+  margin-top: 24px;
+  padding: 16px 8px;
+}
+
+/* Dashboard Stats Cards */
+.dashboard-stats {
+  margin-bottom: 32px;
+}
+
+.dashboard-stat-card {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fff, #f9f9f9);
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+}
+
+.dashboard-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #595959;
+  margin-bottom: 8px;
+}
+
+.stat-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.total-stats {
+  border-left: 4px solid #52c41a;
+}
+
+.expenses-stats {
+  border-left: 4px solid #f5222d;
+}
+
+.balance-stats {
+  border-left: 4px solid #722ed1;
+}
+
+.total-icon {
+  background-color: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.expenses-icon {
+  background-color: rgba(245, 34, 45, 0.1);
+  color: #f5222d;
+}
+
+.balance-icon {
+  background-color: rgba(114, 46, 209, 0.1);
+  color: #722ed1;
+}
+
+.dp-icon {
+  background-color: rgba(250, 140, 22, 0.1);
+  color: #fa8c16;
+}
+
+/* Currency Cards */
+.currency-balances {
+  margin-bottom: 32px;
+}
+
+.currency-card {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  height: 100%;
+}
+
+.currency-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+  transition: transform 0.6s;
+  transform: translateX(-100%);
+}
+
+.currency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.currency-card:hover::before {
+  transform: translateX(100%);
+}
+
+.currency-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.currency-icon {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: white;
+  flex-shrink: 0;
+  padding: 4px;
+  text-align: center;
+}
+
+.usd-card {
+  background: linear-gradient(135deg, #1677ff, #69b1ff);
+}
+
+.usd-card .currency-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.uzs-card {
+  background: linear-gradient(135deg, #52c41a, #95de64);
+}
+
+.uzs-card .currency-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.rub-card {
+  background: linear-gradient(135deg, #722ed1, #b37feb);
+}
+
+.rub-card .currency-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.eur-card {
+  background: linear-gradient(135deg, #fa541c, #ff7a45);
+}
+
+.eur-card .currency-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.currency-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.currency-amount {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Expense Detail Cards */
+.expense-detail-card {
+  height: 100%;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+}
+
+.expense-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.expense-date {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.expense-content {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.expense-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.salaries-icon {
+  background-color: rgba(250, 140, 22, 0.1);
+  color: #fa8c16;
+}
+
+.dp-expense-icon {
+  background-color: rgba(245, 34, 45, 0.1);
+  color: #f5222d;
+}
+
+.expense-stats {
+  flex: 1;
+}
+
+.expense-amount {
+  font-size: 24px;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.expense-percent {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-color: #fff !important;
+  }
+  
+  .non-printable,
+  .dashboard-actions,
+  .ant-layout-header,
+  .ant-layout-sider,
+  .ant-tabs-nav,
+  .ant-layout-footer {
+    display: none !important;
+  }
+  
+  .kassa-overview {
+    padding: 0 !important;
+    background-color: #fff !important;
+  }
+  
+  .dashboard-header {
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .ant-card {
+    box-shadow: none !important;
+    border: 1px solid #d9d9d9 !important;
+  }
+  
+  .dashboard-stat-card:hover,
+  .currency-card:hover,
+  .expense-detail-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .ant-statistic-title {
+    color: #000 !important;
+  }
+  
+  .ant-divider {
+    color: #000 !important;
+    border-color: #000 !important;
+  }
+  
+  .ant-divider-inner-text {
+    color: #000 !important;
+  }
+  
+  .chart-container {
+    page-break-inside: avoid;
+  }
+  
+  .expenses-breakdown {
+    page-break-inside: avoid;
+  }
+  
+  .ant-col {
+    width: 50% !important;
+    max-width: 50% !important;
+    flex: 0 0 50% !important;
+  }
+  
+  /* For currency cards, we need a 2x2 grid */
+  .currency-balances .ant-col {
+    width: 50% !important;
+    max-width: 50% !important;
+    flex: 0 0 50% !important;
+    margin-bottom: 16px;
+  }
+  
+  /* Fix for chart in printed version */
+  .expenses-chart .ant-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+}
+
+/* Empty chart message styling */
+.empty-chart-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Client Accounts Component Styles */
+.client-accounts {
+  padding: 0;
+}
+
+/* Client stats cards */
+.client-stats-row {
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  padding: 24px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.total-clients-card {
+  border-top: 4px solid #1890ff;
+}
+
+.debtors-card {
+  border-top: 4px solid #ff4d4f;
+}
+
+.debt-card {
+  border-top: 4px solid #faad14;
+}
+
+.action-card {
+  border-top: 4px solid #52c41a;
+}
+
+.stat-percentage {
+  color: #8c8c8c;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Filter card */
+.filter-card {
+  border-radius: 8px;
+  background-color: #fafafa;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Client content card */
+.clients-content-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Client card styles */
+.client-card {
+  border-radius: 12px;
+  transition: all 0.3s;
+  height: 100%;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.client-card-debtor {
+  border-left: 4px solid #ff4d4f;
+}
+
+.client-card-paid {
+  border-left: 4px solid #52c41a;
+}
+
+.client-card-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.client-avatar {
+  margin-right: 12px;
+  background-color: #f0f2f5;
+}
+
+.client-card-info {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.client-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.client-company {
+  color: #8c8c8c;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.client-card-content {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-contact {
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
+.client-phone {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.client-financial {
+  text-align: right;
+}
+
+.client-debt-amount {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.client-trips {
+  color: #8c8c8c;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+/* Client details drawer styles */
+.client-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 24px;
+}
+
+.client-header-info {
+  margin-left: 16px;
+  flex: 1;
+}
+
+.client-badges {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.detail-card {
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.financial-card .ant-statistic-content {
+  margin-bottom: 16px;
+}
+
+.payment-progress {
+  margin: 16px 0;
+}
+
+@media (max-width: 768px) {
+  .client-stats-row {
+    margin-bottom: 16px;
+  }
+  
+  .client-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* Print styles for client accounts */
+@media print {
+  .client-accounts .ant-card {
+    box-shadow: none !important;
+    border: 1px solid #d9d9d9 !important;
+  }
+  
+  .client-accounts .ant-btn,
+  .client-accounts .ant-select,
+  .client-accounts .ant-pagination,
+  .client-accounts .ant-drawer,
+  .client-accounts .ant-modal {
+    display: none !important;
+  }
+  
+  .client-accounts .filter-card {
+    display: none !important;
+  }
+  
+  .client-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .summary-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .client-accounts .ant-table-row {
+    break-inside: avoid;
+  }
+}
+
+/* Add these styles for the driver payment component */
+
+.kassa-stats-row {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-amount-positive {
+  color: #52c41a;
+  font-weight: 500;
+}
+
+.transaction-amount-negative {
+  color: #f5222d;
+  font-weight: 500;
+}
+
+.driver-payment-card, .driver-trips-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+/* Currency cards and stats */
+.currency-stats {
+  margin-bottom: 24px;
+}
+
+.currency-card {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  height: 100%;
+}
+
+.currency-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+  transition: transform 0.6s;
+  transform: translateX(-100%);
+}
+
+.currency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.currency-card:hover::before {
+  transform: translateX(100%);
+}
+
+.currency-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.currency-icon {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: white;
+  flex-shrink: 0;
+  padding: 4px;
+  text-align: center;
+}
+
+.usd-card {
+  background: linear-gradient(135deg, #1677ff, #69b1ff);
+}
+
+.usd-card .currency-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.uzs-card {
+  background: linear-gradient(135deg, #52c41a, #95de64);
+}
+
+.uzs-card .currency-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.rub-card {
+  background: linear-gradient(135deg, #722ed1, #b37feb);
+}
+
+.rub-card .currency-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.eur-card {
+  background: linear-gradient(135deg, #fa541c, #ff7a45);
+}
+
+.eur-card .currency-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.currency-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.currency-amount {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Summary cards */
+.summary-card {
+  padding: 24px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.summary-card-title {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.summary-card-value {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.summary-card-subtitle {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.summary-card-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 24px;
+  opacity: 0.2;
+}
+
+.total-card {
+  border-left: 4px solid #1890ff;
+  background: linear-gradient(135deg, #e6f7ff, #ffffff);
+}
+
+.expenses-card {
+  border-left: 4px solid #fa541c;
+  background: linear-gradient(135deg, #fff2e8, #ffffff);
+}
+
+.balance-card {
+  background: linear-gradient(135deg, #f6ffed, #ffffff);
+}
+
+/* Client Accounts */
+.client-accounts {
+  padding: 0;
+}
+
+.client-stats-row {
+  margin-bottom: 24px;
+}
+
+.client-accounts-table .ant-table-tbody > tr:hover > td {
+  background-color: rgba(24, 144, 255, 0.05);
+}
+
+.client-accounts-table .ant-table-thead > tr > th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.filter-card {
+  border-radius: 8px;
+  background-color: #fafafa;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.clients-content-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Tabs and content */
+.main-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.custom-tabs .ant-tabs-tab {
+  padding: 12px 20px;
+  transition: all 0.3s;
+}
+
+.custom-tabs .ant-tabs-tab:hover {
+  color: #1890ff;
+}
+
+.custom-tabs .ant-tabs-tab.ant-tabs-tab-active {
+  background-color: #e6f7ff;
+  border-radius: 8px 8px 0 0;
+}
+
+.custom-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.custom-tabs .ant-tabs-content {
+  padding: 16px 0;
+}
+
+/* Print styles */
+@media print {
+  .non-printable {
+    display: none !important;
+  }
+  
+  .currency-card, .summary-card {
+    box-shadow: none !important;
+    border: 1px solid #e8e8e8 !important;
+    break-inside: avoid;
+  }
+  
+  .usd-card, .rub-card, .eur-card, .uzs-card {
+    background: white !important;
+  }
+  
+  .currency-icon, .currency-title, .currency-amount {
+    color: #000 !important;
+  }
+  
+  .ant-card {
+    box-shadow: none !important;
+    border: 1px solid #e8e8e8 !important;
+  }
+  
+  .dashboard-header {
+    box-shadow: none !important;
+    border-bottom: 1px solid #e8e8e8 !important;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .currency-card {
+    padding: 16px;
+  }
+  
+  .currency-amount {
+    font-size: 22px;
+  }
+  
+  .summary-card-value {
+    font-size: 24px;
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .dashboard-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 576px) {
+  .currency-stats > .ant-col,
+  .client-stats-row > .ant-col {
+    margin-bottom: 16px;
+  }
+}
+
+/* Overview component styles */
+.overview-container {
+  padding: 16px;
+}
+
+.overview-header {
+  margin-bottom: 24px;
+}
+
+.overview-statistics {
+  margin-bottom: 24px;
+}
+
+.currency-breakdown {
+  margin-bottom: 24px;
+}
+
+/* Card styling */
+.statistic-card {
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s ease;
+}
+
+.statistic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.total-card {
+  border-top: 4px solid #3f8600;
+}
+
+.expense-card {
+  border-top: 4px solid #cf1322;
+}
+
+.balance-card {
+  border-top: 4px solid #faad14;
+}
+
+.dp-card {
+  border-top: 4px solid #1890ff;
+}
+
+.card-footer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Currency card styling */
+.currency-card {
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s ease;
+}
+
+.currency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.mini-card {
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.mini-card:hover {
+  transform: scale(1.05);
+}
+
+.usd-card {
+  border-left: 3px solid #3f8600;
+}
+
+.uzs-card {
+  border-left: 3px solid #722ed1;
+}
+
+.rub-card {
+  border-left: 3px solid #1890ff;
+}
+
+.eur-card {
+  border-left: 3px solid #eb2f96;
+}
+
+/* Analysis card styling */
+.analysis-card {
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s ease;
+}
+
+.analysis-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analysis-content {
+  padding: 8px 0;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.result-row {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px dashed #f0f0f0;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  gap: 16px;
+}
+
+/* Fix for Spin component */
+.spin-nested-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.spin-text {
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Service expenses section styling */
+.service-expenses-section {
+  margin-bottom: 24px;
+}
+
+.service-card {
+  border-top: 4px solid #fa8c16;
+  background: linear-gradient(to bottom right, #fff7e6, #ffffff);
+}
+
+.service-breakdown-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.service-breakdown-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.service-mini-card {
+  border-left: 3px solid #fa8c16;
+}
+
+.service-expenses-breakdown {
+  padding: 8px 0;
+} 

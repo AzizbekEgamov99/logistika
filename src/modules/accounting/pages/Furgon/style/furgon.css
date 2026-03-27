@@ -1,0 +1,467 @@
+.furgon-app {
+  color: #1f1f1f;
+  background-color: #f5f7fa;
+}
+
+.furgon-page-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.furgon-page-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.furgon-page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #1890ff, #52c41a);
+  border-radius: 3px;
+}
+
+/* Custom Tab Styling */
+.furgon-tabs .ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.furgon-tabs .ant-tabs-tab {
+  padding: 12px 0;
+  font-size: 16px;
+  margin-right: 32px;
+}
+
+.furgon-tabs .ant-tabs-tab+.ant-tabs-tab {
+  margin-left: 0;
+}
+
+.furgon-tabs .ant-tabs-tab-active {
+  font-weight: 600;
+}
+
+.furgon-tabs .ant-tabs-ink-bar {
+  height: 3px;
+  background: linear-gradient(90deg, #1890ff, #52c41a);
+}
+
+/* Dashboard Styles */
+.furgon-dashboard-container {
+  margin-bottom: 24px;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.stat-card.total::before {
+  background-color: #1890ff;
+}
+
+.stat-card.active::before {
+  background-color: #52c41a;
+}
+
+.stat-card.maintenance::before {
+  background-color: #faad14;
+}
+
+.stat-card.waiting::before {
+  background-color: #ff4d4f;
+}
+
+.stat-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.stat-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  margin-right: 16px;
+  font-size: 24px;
+}
+
+.stat-card.total .stat-card-icon {
+  background-color: rgba(24, 144, 255, 0.1);
+  color: #1890ff;
+}
+
+.stat-card.active .stat-card-icon {
+  background-color: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.stat-card.maintenance .stat-card-icon {
+  background-color: rgba(250, 173, 20, 0.1);
+  color: #faad14;
+}
+
+.stat-card.waiting .stat-card-icon {
+  background-color: rgba(255, 77, 79, 0.1);
+  color: #ff4d4f;
+}
+
+.stat-card-details h3 {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.stat-card-details p {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #262626;
+}
+
+/* Table Styles */
+.furgon-table-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.furgon-table {
+  width: 100%;
+}
+
+.furgon-table .ant-table-thead>tr>th {
+  background-color: #fafafa;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.furgon-table .ant-table-tbody>tr>td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.furgon-table .ant-table-tbody>tr:hover>td {
+  background-color: #fafafa;
+}
+
+.furgon-table .ant-empty-description {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Status Tags */
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.status-tag.active {
+  color: #52c41a;
+  background: rgba(82, 196, 26, 0.1);
+  border-color: rgba(82, 196, 26, 0.2);
+}
+
+.status-tag.maintenance {
+  color: #faad14;
+  background: rgba(250, 173, 20, 0.1);
+  border-color: rgba(250, 173, 20, 0.2);
+}
+
+.status-tag.waiting {
+  color: #ff4d4f;
+  background: rgba(255, 77, 79, 0.1);
+  border-color: rgba(255, 77, 79, 0.2);
+}
+
+.status-tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.status-tag.active .status-tag-dot {
+  background-color: #52c41a;
+}
+
+.status-tag.maintenance .status-tag-dot {
+  background-color: #faad14;
+}
+
+.status-tag.waiting .status-tag-dot {
+  background-color: #ff4d4f;
+}
+
+/* Custom Form Styling */
+.furgon-form .ant-form-item-label>label {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.furgon-form .ant-input,
+.furgon-form .ant-input-affix-wrapper,
+.furgon-form .ant-select-selector {
+  border-radius: 6px;
+}
+
+.furgon-form .ant-input:focus,
+.furgon-form .ant-input-affix-wrapper:focus,
+.furgon-form .ant-input-affix-wrapper-focused,
+.furgon-form .ant-select-focused .ant-select-selector {
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.furgon-form .ant-form-item-has-error .ant-input,
+.furgon-form .ant-form-item-has-error .ant-input-affix-wrapper,
+.furgon-form .ant-form-item-has-error .ant-select-selector {
+  border-color: #ff4d4f;
+}
+
+/* Custom Modal Styling */
+.furgon-modal .ant-modal-content {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.furgon-modal .ant-modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.furgon-modal .ant-modal-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.furgon-modal .ant-modal-body {
+  padding: 24px;
+}
+
+.furgon-modal .ant-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease;
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  color: #d9d9d9;
+  margin-bottom: 16px;
+}
+
+.empty-state-title {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 8px;
+}
+
+.empty-state-description {
+  color: rgba(0, 0, 0, 0.45);
+  max-width: 300px;
+  margin-bottom: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .furgon-page-container {
+    padding: 16px;
+  }
+
+  .furgon-page-title {
+    font-size: 24px;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .table-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .ant-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+.avatar-uploader .ant-upload {
+  width: 200px !important;
+  height: 200px !important;
+  margin-bottom: 20px;
+}
+
+.avatar-uploader .ant-upload img {
+  border-radius: 8px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 8px;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+}
+
+.image-overlay .anticon {
+  color: white;
+  font-size: 20px;
+}
+
+.furgon-card {
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.furgon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.furgon-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.furgon-list-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.furgon-list-item:hover {
+  background-color: #f5f5f5;
+}
+
+.furgon-list-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 16px;
+}

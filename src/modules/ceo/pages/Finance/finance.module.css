@@ -1,0 +1,240 @@
+/* Finance Module CSS */
+
+/* Currency Cards */
+.currency-card {
+  border-radius: 8px;
+  height: 100%;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.currency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.currency-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.currency-icon {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currency-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.currency-amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.usd-card {
+  background: linear-gradient(135deg, #f6ffed, #e6f7ff);
+  border-top: 4px solid #52c41a;
+}
+
+.usd-card .currency-icon {
+  background-color: #52c41a;
+  color: white;
+}
+
+.rub-card {
+  background: linear-gradient(135deg, #fff0f6, #f0f5ff);
+  border-top: 4px solid #1890ff;
+}
+
+.rub-card .currency-icon {
+  background-color: #1890ff;
+  color: white;
+}
+
+.eur-card {
+  background: linear-gradient(135deg, #feffe6, #fcffe6);
+  border-top: 4px solid #faad14;
+}
+
+.eur-card .currency-icon {
+  background-color: #faad14;
+  color: white;
+}
+
+.uzs-card {
+  background: linear-gradient(135deg, #f9f0ff, #efdbff);
+  border-top: 4px solid #722ed1;
+}
+
+.uzs-card .currency-icon {
+  background-color: #722ed1;
+  color: white;
+}
+
+/* Summary Cards */
+.summary-card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 8px;
+}
+
+.summary-card-value {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.summary-card-subtitle {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 8px;
+}
+
+.summary-card-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+  opacity: 0.2;
+}
+
+.total-card {
+  background: linear-gradient(135deg, #e6f7ff, #f0f5ff);
+  border-top: 4px solid #1890ff;
+}
+
+.expenses-card {
+  background: linear-gradient(135deg, #fff2e8, #ffd8bf);
+  border-top: 4px solid #fa8c16;
+}
+
+.balance-card {
+  position: relative;
+  background: linear-gradient(135deg, #f6ffed, #d9f7be);
+}
+
+/* Payment Type Cards */
+.payment-type-card {
+  height: 100%;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.payment-type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Card */
+.filter-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+/* Finance Dashboard */
+.finance-dashboard {
+  padding: 24px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-title h4 {
+  margin-bottom: 0;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Loading States */
+.loading-container {
+  text-align: center;
+  padding: 50px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+/* Table Styles */
+.transaction-table {
+  margin-top: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .currency-amount {
+    font-size: 20px;
+  }
+  
+  .summary-card-value {
+    font-size: 24px;
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .dashboard-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .non-printable {
+    display: none !important;
+  }
+  
+  .finance-dashboard {
+    padding: 0;
+  }
+  
+  .summary-card, .currency-card {
+    box-shadow: none;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .dashboard-header {
+    margin-bottom: 16px;
+  }
+} 

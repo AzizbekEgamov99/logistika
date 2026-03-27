@@ -1,0 +1,241 @@
+.service-app {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  .service-page-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-page-title {
+    margin-bottom: 24px;
+    color: #1890ff;
+    font-size: 28px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 12px;
+  }
+  
+  .service-tabs {
+    margin-top: 20px;
+  }
+  
+  /* Dashboard styles */
+  .service-dashboard {
+    margin-top: 16px;
+  }
+  
+  .stat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .stat-card {
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1890ff;
+  }
+  
+  .recent-services {
+    margin-top: 24px;
+  }
+  
+  .recent-services h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+  
+  /* Service form styles */
+  .service-add {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Service list styles */
+  .service-list {
+    margin-top: 16px;
+  }
+  
+  .custom-services-list {
+    margin-top: 16px;
+  }
+  
+  .custom-services-list h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+  
+  /* Umumiy uslublar */
+  .maintenance-page {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    min-height: 100%;
+  }
+  
+  .maintenance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .maintenance-title {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .maintenance-title .anticon {
+    font-size: 24px;
+    color: #1677ff;
+  }
+  
+  /* Tab uslublari */
+  .maintenance-tabs .ant-tabs-nav {
+    margin-bottom: 20px;
+  }
+  
+  .maintenance-tabs .ant-tabs-tab {
+    padding: 12px 20px;
+    transition: all 0.3s;
+  }
+  
+  .maintenance-tabs .ant-tabs-tab:hover {
+    color: #1677ff;
+  }
+  
+  .maintenance-tabs .ant-tabs-tab-active {
+    background-color: #e6f7ff;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .maintenance-tabs .ant-tabs-ink-bar {
+    height: 3px;
+    background: #1677ff;
+  }
+  
+  /* Dashboard uslublari */
+  .dashboard-stats {
+    margin-bottom: 24px;
+  }
+  
+  .dashboard-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+  }
+  
+  .dashboard-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .dashboard-card .ant-avatar {
+    margin-right: 16px;
+  }
+  
+  .dashboard-table {
+    margin-top: 16px;
+  }
+  
+  .dashboard-table .ant-table-thead > tr > th {
+    background-color: #f5f7fa;
+  }
+  
+  /* Forma uslublari */
+  .service-form {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+  }
+  
+  .service-form-title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .service-form-title .anticon {
+    color: #1677ff;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  /* Jadval uslublari */
+  .service-list-container {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .service-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-list-title {
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .service-list-title .anticon {
+    color: #1677ff;
+  }
+  
+  .service-table .ant-table-tbody > tr:hover > td {
+    background-color: #e6f7ff;
+  }
+  
+  /* Status uslublari */
+  .status-tag {
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+  
+  /* Responsive dizayn */
+  @media (max-width: 768px) {
+    .maintenance-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    
+    .service-form {
+      padding: 16px;
+    }
+    
+    .service-list-container {
+      padding: 16px;
+    }
+  }

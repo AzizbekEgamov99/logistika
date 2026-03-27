@@ -1,0 +1,76 @@
+.trip-history {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.trip-history-header h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.trip-history-header p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.trip-history-filters {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.trip-history-table {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Table styling */
+.trip-history-table .ant-table-thead > tr > th {
+  background-color: #f5f7fa;
+  color: #333;
+  font-weight: 600;
+}
+
+.trip-history-table .ant-table-tbody > tr:hover > td {
+  background-color: #f0f7ff;
+}
+
+/* Drawer styling */
+.ant-drawer-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-drawer-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: #f5f7fa;
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .trip-history-filters {
+    padding: 15px;
+  }
+  
+  .trip-history-table {
+    padding: 15px;
+    overflow-x: auto;
+  }
+  
+  .trip-history-header h1 {
+    font-size: 20px;
+  }
+} 

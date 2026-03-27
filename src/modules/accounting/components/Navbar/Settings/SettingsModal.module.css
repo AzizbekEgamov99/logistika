@@ -1,0 +1,14 @@
+.settingsModal :global(.ant-modal-content) {
+    border-radius: 12px;
+}
+.settingsSection {
+    padding: 16px;
+}
+.settingsSection h3 {
+    margin-bottom: 16px;
+    color: #1f1f1f;
+    font-weight: 500;
+}
+.settingsSection .ant-radio-group, .settingsSection .ant-switch, .settingsSection .ant-color-picker {
+    margin-bottom: 24px;
+}

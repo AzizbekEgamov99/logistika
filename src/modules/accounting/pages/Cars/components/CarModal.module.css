@@ -1,0 +1,47 @@
+.carModal {
+    max-width: 90vw;
+}
+
+.carForm {
+    padding: 20px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.uploadItem {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.carForm :global(.ant-form-item) {
+    margin-bottom: 16px;
+}
+
+.carForm :global(.ant-input),
+.carForm :global(.ant-select-selector) {
+    border-radius: 6px;
+}
+
+.carForm :global(.ant-upload.ant-upload-select-picture-card) {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 16px;
+}
+
+.carForm :global(.ant-form-item-label) {
+    padding-bottom: 4px;
+}
+
+.carForm :global(.ant-form-item-label > label) {
+    font-weight: 500;
+    color: #1f1f1f;
+} 

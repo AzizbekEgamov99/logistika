@@ -1,0 +1,251 @@
+.ceo-drivers-page {
+    padding: 16px;
+}
+
+.ceo-drivers-page .main-card {
+    margin-top: 16px;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.ceo-drivers-page .ant-table-wrapper .ant-table-container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ceo-drivers-page .ant-statistic-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.ceo-drivers-page .search-input {
+    max-width: 300px;
+}
+
+.ceo-drivers-page .ant-avatar {
+    background-color: #f0f2f5;
+}
+
+.ceo-drivers-page .ant-card {
+    border-radius: 12px;
+}
+
+.ceo-drivers-page .ant-card-head-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .ceo-drivers-page {
+        padding: 8px;
+    }
+    
+    .ceo-drivers-page .ant-tabs-nav {
+        margin-bottom: 8px;
+    }
+}
+
+.drivers-dashboard {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.stat-footer {
+  margin-top: 12px;
+}
+
+.content-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+}
+
+.alert-section {
+  margin-bottom: 16px;
+}
+
+.alert-item {
+  padding: 8px 12px;
+  background-color: #fafafa;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-item:hover {
+  background-color: #f0f0f0;
+}
+
+.driver-tabs {
+  margin-bottom: 16px;
+}
+
+.driver-tabs .ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+.drivers-list-section {
+  margin-bottom: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stat-card {
+    margin-bottom: 16px;
+  }
+  
+  .content-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* Drivers main container */
+.drivers-container {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Tabs styling */
+.drivers-tabs .ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+.drivers-tabs .ant-tabs-tab-btn {
+  font-weight: 500;
+}
+
+/* Statistics cards */
+.driver-stats .ant-card {
+  border-radius: 6px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.driver-stats .ant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.statistic-footer {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+/* Dashboard specific styles */
+.drivers-dashboard .ant-card {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.drivers-dashboard .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.drivers-dashboard .ant-list-item {
+  transition: background-color 0.3s;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.drivers-dashboard .ant-list-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Filters styling */
+.driver-filters {
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.driver-filters .ant-form-item {
+  margin-bottom: 12px;
+}
+
+/* Table styling */
+.drivers-table .ant-table-tbody > tr.ant-table-row:hover > td {
+  background-color: #f0f7ff;
+}
+
+.drivers-table .ant-table-tbody > tr.ant-table-row-selected > td {
+  background-color: #e6f7ff;
+}
+
+/* Driver on road component */
+.drivers-on-road .status-badge {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.status-badge.active {
+  background-color: #52c41a;
+}
+
+.status-badge.inactive {
+  background-color: #d9d9d9;
+}
+
+/* Alert styles */
+.license-alert {
+  margin-bottom: 16px;
+}
+
+/* Action buttons */
+.drivers-actions {
+  margin-bottom: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .drivers-actions .ant-space {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .drivers-actions .ant-space-item {
+    margin-bottom: 8px;
+  }
+  
+  .ant-table {
+    overflow-x: auto;
+  }
+}
+
+/* Animation for important elements */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(24, 144, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(24, 144, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(24, 144, 255, 0);
+  }
+}
+
+.highlight-card {
+  animation: pulse 2s infinite;
+} 

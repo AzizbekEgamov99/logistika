@@ -1,0 +1,136 @@
+.tableContainer {
+  width: 100%;
+}
+
+.emptyState {
+  padding: 40px 0;
+}
+
+.furgonTable th {
+  background-color: #f5f5f5;
+  font-weight: 500;
+  text-align: left;
+  padding: 12px 16px;
+}
+
+.furgonTable td {
+  padding: 12px 16px;
+  vertical-align: middle;
+}
+
+.furgonTable :global(.ant-table-tbody > tr:hover > td) {
+  background-color: #f9f9f9;
+}
+
+.furgonCard {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.pageTitle {
+  margin-bottom: 4px !important;
+}
+
+.mainCard {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.furgonTabs :global(.ant-tabs-nav) {
+  margin-bottom: 16px;
+}
+
+.innerTabs :global(.ant-tabs-nav) {
+  margin-bottom: 16px;
+}
+
+.tableActions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.vehicleTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vehicleTable th {
+  background-color: #f5f5f5;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 500;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.vehicleTable td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.vehicleTable tr:hover td {
+  background-color: #f5f5f5;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.tabContent {
+  min-height: 300px;
+}
+
+.statisticsCard {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statValue {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1890ff;
+  margin-bottom: 0;
+}
+
+.statLabel {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.statIcon {
+  font-size: 28px;
+  color: #1890ff;
+  background: #e6f7ff;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+/* Better button spacing in action columns */
+.furgonTable :global(.ant-space.ant-space-middle) {
+  gap: 8px !important;
+}
+
+/* Custom styling for furgon table */
+.furgonTable :global(.ant-table-container) {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.furgonTable :global(.ant-table-cell) {
+  font-size: 14px;
+}
+
+.furgonTable :global(.ant-tag) {
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 4px;
+} 

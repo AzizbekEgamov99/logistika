@@ -1,0 +1,323 @@
+/* CEO Dashboard Styles */
+.ceo-dashboard {
+  background-color: #f7f9fc;
+}
+
+/* Custom Layout */
+.ceo-main-layout .custom-sidebar {
+  overflow: hidden;
+}
+
+.ceo-main-layout .custom-sidebar .ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+}
+
+.ceo-main-layout .custom-sidebar .ant-menu-item {
+  border-radius: 0 24px 24px 0;
+  margin: 4px 0;
+  padding-left: 24px !important;
+  transition: all 0.3s ease;
+}
+
+.ceo-main-layout .custom-sidebar .ant-menu-item:hover,
+.ceo-main-layout .custom-sidebar .ant-menu-item-selected {
+  background: rgba(26, 54, 93, 0.1);
+  color: #1a365d;
+}
+
+.ceo-main-layout .custom-sidebar .ant-menu-item-selected {
+  background: linear-gradient(90deg, rgba(26, 54, 93, 0.12), rgba(26, 54, 93, 0.05));
+}
+
+.ceo-main-layout .custom-sidebar .ant-menu-item-selected::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #1a365d;
+  border-radius: 0 2px 2px 0;
+}
+
+.ceo-main-layout .ant-menu-title-content {
+  font-weight: 500;
+}
+
+/* Card Styles */
+.ceo-dashboard .ant-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.ceo-dashboard .ant-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.ceo-dashboard .kpi-card {
+  height: 100%;
+  background: linear-gradient(145deg, #ffffff, #f9fafb);
+}
+
+.ceo-dashboard .kpi-card:hover {
+  background: linear-gradient(145deg, #ffffff, #f5f9ff);
+}
+
+/* Chart Styles */
+.ceo-dashboard .ant-card-body {
+  padding: 24px;
+}
+
+/* Table Styles */
+.ceo-dashboard .ant-table {
+  background: #fff;
+  border-radius: 12px;
+}
+
+.ceo-dashboard .ant-table-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ceo-dashboard .ant-table-thead > tr > th {
+  background: #f7f9fc;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px solid #e6e8f0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+.ceo-dashboard .ant-table-row:hover {
+  background-color: #f5f8ff;
+}
+
+.ceo-dashboard .ant-table-row td {
+  border-bottom: 1px solid #f0f2f7;
+}
+
+/* Filter Styles */
+.ceo-dashboard .filter-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #f9fafb);
+}
+
+/* Button Styles */
+.ceo-dashboard .custom-button {
+  border-radius: 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ceo-dashboard .custom-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.3);
+}
+
+/* Typography */
+.ceo-dashboard h1, 
+.ceo-dashboard h2, 
+.ceo-dashboard h3, 
+.ceo-dashboard h4 {
+  color: #1a365d;
+  font-weight: 600;
+}
+
+.ceo-dashboard h2 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.ceo-dashboard h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+/* Progress & Stats */
+.ceo-dashboard .ant-progress-text {
+  color: #1a365d;
+  font-weight: 600;
+}
+
+.ceo-dashboard .ant-statistic-title {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.ceo-dashboard .ant-statistic-content {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a365d;
+}
+
+/* Icons in cards */
+.ceo-dashboard .icon-container {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* KPI Icons */
+.ceo-dashboard .icon-revenue {
+  background: linear-gradient(135deg, #e6f7ff 0%, #bae7ff 100%);
+  color: #1890ff;
+}
+
+.ceo-dashboard .icon-expense {
+  background: linear-gradient(135deg, #fff7e6 0%, #ffe7ba 100%);
+  color: #fa8c16;
+}
+
+.ceo-dashboard .icon-profit {
+  background: linear-gradient(135deg, #f6ffed 0%, #b7eb8f 100%);
+  color: #52c41a;
+}
+
+.ceo-dashboard .icon-performance {
+  background: linear-gradient(135deg, #f9f0ff 0%, #efdbff 100%);
+  color: #722ed1;
+}
+
+/* Visual Style Utilities */
+.ceo-dashboard .rounded-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ceo-dashboard .gradient-header {
+  background: linear-gradient(to right, #1a365d, #2a4a73);
+  color: white;
+  padding: 20px 24px;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Dashboard section dividers */
+.ceo-dashboard .section-divider {
+  margin: 32px 0 24px;
+  border-color: #e6e8f0;
+}
+
+.ceo-dashboard .section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a365d;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.ceo-dashboard .section-title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 18px;
+  background: #1a365d;
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+/* Info Cards */
+.ceo-dashboard .info-card {
+  background: linear-gradient(145deg, #ffffff, #f9fafb);
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.ceo-dashboard .info-card:hover {
+  background: linear-gradient(145deg, #ffffff, #f0f7ff);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ceo-dashboard .info-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a365d;
+  margin-bottom: 12px;
+}
+
+.ceo-dashboard .info-card-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a365d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .ceo-dashboard .ant-card {
+    margin-bottom: 16px;
+  }
+  
+  .ceo-dashboard h2 {
+    font-size: 24px;
+  }
+  
+  .ceo-dashboard .info-card-value {
+    font-size: 20px;
+  }
+}
+
+/* Animation Utilities */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility Classes */
+.text-success { color: #52c41a; }
+.text-danger { color: #f5222d; }
+.text-warning { color: #fa8c16; }
+.text-info { color: #1890ff; }
+.text-primary { color: #1a365d; }
+
+.bg-success { background-color: #f6ffed; }
+.bg-danger { background-color: #fff1f0; }
+.bg-warning { background-color: #fff7e6; }
+.bg-info { background-color: #e6f7ff; }
+.bg-primary { background: linear-gradient(to right, #1a365d, #2a4a73); }
+
+/* Custom Scrollbar */
+.ceo-dashboard ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.ceo-dashboard ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.ceo-dashboard ::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.ceo-dashboard ::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+} 

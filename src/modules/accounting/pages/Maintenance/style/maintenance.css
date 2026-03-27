@@ -1,0 +1,13 @@
+/* Maintenance module styles */
+
+/* Style for completed service rows */
+.completed-row {
+  background-color: #f6ffed;
+  opacity: 0.8;
+}
+
+.completed-row:hover td {
+  background-color: #d9f7be !important;
+}
+
+/* Add any other maintenance-related styles below */ 

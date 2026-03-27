@@ -1,0 +1,338 @@
+.maintenancePage {
+    padding: 24px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.maintenanceContent {
+    padding: 16px;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.pageTitle {
+    margin-bottom: 4px !important;
+}
+
+.statsCard {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.statsCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.mainCard {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    margin-bottom: 24px;
+}
+
+.serviceModal {
+    :global(.ant-modal-content) {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    :global(.ant-modal-header) {
+        background: #f8f8f8;
+        padding: 16px 24px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    :global(.ant-modal-body) {
+        padding: 24px;
+    }
+
+    :global(.ant-modal-footer) {
+        padding: 16px 24px;
+        border-top: 1px solid #f0f0f0;
+    }
+}
+
+.serviceForm {
+    :global(.ant-form-item-label) {
+        padding-bottom: 4px;
+    }
+
+    :global(.ant-input-number-group-wrapper) {
+        width: 100%;
+    }
+
+    :global(.ant-select-selector) {
+        border-radius: 6px !important;
+    }
+
+    :global(.ant-input), 
+    :global(.ant-input-number),
+    :global(.ant-picker) {
+        border-radius: 6px;
+    }
+}
+
+.partsTable {
+    margin-top: 16px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+
+    :global(.ant-table-thead > tr > th) {
+        background: #fafafa;
+    }
+}
+
+.importanceHigh {
+    color: #ff4d4f;
+}
+
+.importanceMedium {
+    color: #faad14;
+}
+
+.importanceLow {
+    color: #52c41a;
+}
+
+.categoryRegular {
+    background: #e6f7ff;
+    color: #1890ff;
+}
+
+.categoryRepair {
+    background: #fff2e8;
+    color: #fa541c;
+}
+
+.categoryInspection {
+    background: #f6ffed;
+    color: #52c41a;
+}
+
+.statusTag {
+    text-transform: capitalize;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.documentCard {
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #fafafa;
+        border-color: #d9d9d9;
+    }
+}
+
+.noteItem {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+    &.warning {
+        background: #fff2e8;
+        border: 1px solid #ffccc7;
+    }
+
+    &.recommendation {
+        background: #f6ffed;
+        border: 1px solid #b7eb8f;
+    }
+
+    &.general {
+        background: #f5f5f5;
+        border: 1px solid #d9d9d9;
+    }
+}
+
+.costBreakdown {
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+
+    .costItem {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px dashed #f0f0f0;
+
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    .totalCost {
+        font-weight: bold;
+        color: #1890ff;
+        font-size: 16px;
+    }
+}
+
+.serviceDetails {
+    .detailRow {
+        display: flex;
+        margin-bottom: 16px;
+
+        .label {
+            width: 200px;
+            color: #8c8c8c;
+        }
+
+        .value {
+            flex: 1;
+            color: #262626;
+        }
+    }
+}
+
+.maintenanceTabs {
+    margin-top: -8px;
+}
+
+.tabContent {
+    margin-top: 16px;
+}
+
+.dashboardContainer {
+    padding: 4px;
+}
+
+.statsCards {
+    margin-bottom: 24px;
+}
+
+.statCard {
+    height: 100%;
+    border-radius: 8px;
+    transition: all 0.3s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.statCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.statServiceIcon {
+    background-color: #1677ff !important;
+    margin-right: 16px;
+}
+
+.statOptolIcon {
+    background-color: #52c41a !important;
+    margin-right: 16px;
+}
+
+.statBalonIcon {
+    background-color: #722ed1 !important;
+    margin-right: 16px;
+}
+
+.statAmountIcon {
+    background-color: #fa8c16 !important;
+    margin-right: 16px;
+}
+
+.recentServicesCard {
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    margin-bottom: 24px;
+}
+
+.servicesTable {
+    margin-top: 8px;
+}
+
+.summaryRow {
+    margin-bottom: 24px;
+}
+
+.summaryCard {
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.summaryContent {
+    padding: 8px;
+}
+
+.summaryStatItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #f0f0f0;
+}
+
+.summaryStatItem:last-child {
+    border-bottom: none;
+}
+
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.loadingText {
+    margin-top: 16px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.errorAlert {
+    margin: 24px 0;
+    max-width: 600px;
+    margin: 24px auto;
+}
+
+@media (max-width: 576px) {
+    .maintenanceContent {
+        padding: 8px;
+    }
+    
+    .pageHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .pageHeader > button {
+        margin-top: 16px;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .maintenancePage {
+        padding: 16px;
+    }
+
+    .serviceDetails {
+        .detailRow {
+            flex-direction: column;
+
+            .label {
+                width: 100%;
+                margin-bottom: 4px;
+            }
+        }
+    }
+} 

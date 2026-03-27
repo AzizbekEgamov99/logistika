@@ -1,0 +1,218 @@
+/* DriverModal.css */
+.driver-modal .ant-modal-content {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .driver-modal .ant-modal-header {
+    border-radius: 12px 12px 0 0;
+    background-color: #f8f9fa;
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .driver-modal .modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  
+  .driver-modal .ant-modal-body {
+    padding: 24px;
+  }
+  
+  .driver-modal .ant-modal-footer {
+    border-top: 1px solid #f0f0f0;
+    padding: 16px 24px;
+    border-radius: 0 0 12px 12px;
+  }
+  
+  .driver-form .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .driver-form .section-header h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #141414;
+    margin: 0;
+  }
+  
+  .driver-form .tooltip-button {
+    color: #8c8c8c;
+  }
+  
+  .driver-form .tooltip-button:hover {
+    color: #1890ff;
+  }
+  
+  .driver-form .form-item {
+    margin-bottom: 16px;
+  }
+  
+  .driver-form .ant-form-item-label > label {
+    font-weight: 500;
+    color: #262626;
+  }
+  
+  .driver-form .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    color: #ff4d4f;
+  }
+  
+  .profile-section {
+    margin-bottom: 20px;
+  }
+  
+  .avatar-upload .ant-form-item-control-input {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .avatar-uploader .ant-upload.ant-upload-select-picture-card {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fafafa;
+    border: 1px dashed #d9d9d9;
+    transition: all 0.3s;
+  }
+  
+  .avatar-uploader .ant-upload.ant-upload-select-picture-card:hover {
+    border-color: #1890ff;
+  }
+  
+  .upload-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #8c8c8c;
+  }
+  
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .status-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .primary-button {
+    background-color: #1890ff;
+    border-color: #1890ff;
+  }
+  
+  .primary-button:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  
+  .cancel-button {
+    border-color: #d9d9d9;
+  }
+  
+  .cancel-button:hover {
+    color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  
+  /* Form elementlar uchun stil */
+  .driver-form .ant-input,
+  .driver-form .ant-select-selector,
+  .driver-form .ant-picker,
+  .driver-form .ant-input-number {
+    border-radius: 6px;
+    padding: 8px 12px;
+    height: auto;
+    box-shadow: none;
+    transition: all 0.3s;
+  }
+  
+  .driver-form .ant-input:hover,
+  .driver-form .ant-select-selector:hover,
+  .driver-form .ant-picker:hover,
+  .driver-form .ant-input-number:hover {
+    border-color: #40a9ff;
+  }
+  
+  .driver-form .ant-input:focus,
+  .driver-form .ant-select-selector:focus,
+  .driver-form .ant-picker-focused,
+  .driver-form .ant-input-number-focused {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+  }
+  
+  /* Select komponenti uchun */
+  .driver-form .ant-select-selector {
+    padding: 0 12px;
+  }
+  
+  .driver-form .ant-select-selection-item {
+    line-height: 32px;
+  }
+  
+  /* Inputlar uchun prefiks ikonlar */
+  .driver-form .ant-input-prefix,
+  .driver-form .ant-input-suffix {
+    color: rgba(0, 0, 0, 0.45);
+    margin-right: 8px;
+  }
+  
+  /* Date picker uchun */
+  .driver-form .ant-picker {
+    padding: 8px 12px;
+  }
+  
+  /* InputNumber uchun */
+  .driver-form .ant-input-number-group-wrapper {
+    width: 100%;
+  }
+  
+  .driver-form .ant-input-number {
+    width: 100%;
+    border-radius: 6px 0 0 6px;
+  }
+  
+  .driver-form .ant-input-number-group-addon {
+    border-radius: 0 6px 6px 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* Responsive dizayn uchun */
+  @media (max-width: 576px) {
+    .driver-modal {
+      max-width: 100% !important;
+      margin: 0 !important;
+    }
+    
+    .driver-modal .ant-modal-content {
+      border-radius: 0;
+    }
+    
+    .driver-modal .ant-modal-header {
+      border-radius: 0;
+    }
+    
+    .driver-form .ant-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }

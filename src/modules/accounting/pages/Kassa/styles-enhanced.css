@@ -1,0 +1,359 @@
+/* Enhanced styles for the Overview component */
+
+/* Card title styling */
+.card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 8px;
+}
+
+.card-title-with-icon {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.card-title-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Statistic cards styling */
+.statistic-card {
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.statistic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.stat-progress {
+  margin: 12px 0;
+}
+
+.card-footer {
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+/* Total card styling */
+.total-card {
+  background: linear-gradient(135deg, #f6ffed, #e6f7ff);
+  border-top: 4px solid #52c41a;
+}
+
+/* Expense card styling */
+.expense-card {
+  background: linear-gradient(135deg, #fff2e8, #fff0f6);
+  border-top: 4px solid #f5222d;
+}
+
+/* Balance card styling */
+.balance-card {
+  background: linear-gradient(135deg, #f6ffed, #d9f7be);
+  border-top: 4px solid #52c41a;
+}
+
+/* DP card styling */
+.dp-card {
+  background: linear-gradient(135deg, #e6f7ff, #bae7ff);
+  border-top: 4px solid #1890ff;
+}
+
+/* Currency cards section */
+.currency-card {
+  border-radius: 10px;
+  background: #ffffff;
+  height: 100%;
+}
+
+.currency-grid {
+  margin-top: 8px;
+}
+
+.mini-card {
+  border-radius: 10px;
+  padding: 12px;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.mini-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mini-card-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.currency-icon {
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+/* Currency card styles */
+.usd-card {
+  background: linear-gradient(135deg, #f6ffed, #e6f7ff);
+  border-left: 3px solid #52c41a;
+}
+
+.uzs-card {
+  background: linear-gradient(135deg, #f9f0ff, #efdbff);
+  border-left: 3px solid #722ed1;
+}
+
+.rub-card {
+  background: linear-gradient(135deg, #e6f7ff, #bae7ff);
+  border-left: 3px solid #1890ff;
+}
+
+.eur-card {
+  background: linear-gradient(135deg, #fff7e6, #fff1f0);
+  border-left: 3px solid #fa8c16;
+}
+
+.currency-total {
+  margin-top: 8px;
+}
+
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4px;
+}
+
+/* Analysis card styling */
+.analysis-card {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.analysis-content {
+  padding: 0 8px;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 8px;
+}
+
+.result-row {
+  font-weight: bold;
+  padding: 8px;
+  background-color: #f6ffed;
+  border-radius: 6px;
+  margin-top: 24px;
+}
+
+.analysis-progress {
+  margin-bottom: 16px;
+}
+
+/* Divider styling */
+.divider-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .statistic-card .ant-statistic-content-value {
+    font-size: 22px !important;
+  }
+
+  .mini-card .ant-statistic-content-value {
+    font-size: 16px !important;
+  }
+
+  .mini-card {
+    padding: 8px;
+  }
+
+  .mini-card-title {
+    font-size: 10px;
+  }
+
+  .currency-icon {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stat-progress,
+  .analysis-progress {
+    margin: 8px 0;
+  }
+
+  .card-footer {
+    font-size: 10px;
+  }
+
+  .metric-row {
+    margin: 12px 0 6px;
+    font-size: 12px;
+  }
+}
+
+/* Add these styles */
+.finance-section {
+  margin-bottom: 24px;
+}
+
+.finance-card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.section-icon {
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.subsection-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.inner-card {
+  border-radius: 8px;
+  height: 100%;
+}
+
+.currency-grid {
+  margin-top: 16px;
+}
+
+.currency-card {
+  height: 100%;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.currency-label {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 8px;
+}
+
+.currency-amount {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.currency-symbol {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.usd-card {
+  background: linear-gradient(to bottom right, #f6ffed, #d9f7be);
+  border-left: 3px solid #52c41a;
+}
+
+.uzs-card {
+  background: linear-gradient(to bottom right, #f9f0ff, #efdbff);
+  border-left: 3px solid #722ed1;
+}
+
+.rub-card {
+  background: linear-gradient(to bottom right, #e6f7ff, #bae7ff);
+  border-left: 3px solid #1890ff;
+}
+
+.eur-card {
+  background: linear-gradient(to bottom right, #fff7e6, #ffe7ba);
+  border-left: 3px solid #fa8c16;
+}
+
+.total-divider {
+  margin: 16px 0;
+}
+
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4px;
+}
+
+.total-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #52c41a;
+}
+
+.balance-analysis {
+  padding: 8px 0;
+}
+
+.analysis-item {
+  margin-bottom: 20px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.item-value {
+  font-weight: 500;
+}
+
+.result-item {
+  margin-top: 28px;
+  padding: 12px;
+  background-color: #f6ffed;
+  border-radius: 8px;
+  border-left: 3px solid #52c41a;
+}
+
+.positive {
+  color: #52c41a;
+}
+
+.negative {
+  color: #f5222d;
+}
+
+@media (max-width: 768px) {
+  .currency-amount {
+    font-size: 18px;
+  }
+
+  .currency-symbol {
+    font-size: 16px;
+  }
+}

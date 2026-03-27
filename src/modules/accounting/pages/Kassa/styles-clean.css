@@ -1,0 +1,340 @@
+/* Clean, simple styles for the Finance Overview */
+
+.overview-container {
+  padding: 20px;
+  background-color: #f0f2f5;
+  border-radius: 10px;
+}
+
+/* Page header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Stats boxes */
+.stats-row {
+  margin-bottom: 24px;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.stat-description {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Stat box colors */
+.income-box {
+  border-left: 4px solid #52c41a;
+}
+
+.income-box .stat-icon {
+  background-color: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.expense-box {
+  border-left: 4px solid #ff4d4f;
+}
+
+.expense-box .stat-icon {
+  background-color: rgba(255, 77, 79, 0.1);
+  color: #ff4d4f;
+}
+
+.balance-positive-box {
+  border-left: 4px solid #52c41a;
+}
+
+.balance-positive-box .stat-icon {
+  background-color: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.balance-negative-box {
+  border-left: 4px solid #ff4d4f;
+}
+
+.balance-negative-box .stat-icon {
+  background-color: rgba(255, 77, 79, 0.1);
+  color: #ff4d4f;
+}
+
+.service-box {
+  border-left: 4px solid #1890ff;
+}
+
+.service-box .stat-icon {
+  background-color: rgba(24, 144, 255, 0.1);
+  color: #1890ff;
+}
+
+/* Section container */
+.section-container {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.section-header .anticon {
+  margin-right: 8px;
+}
+
+/* Currency section */
+.currency-section {
+  border-radius: 10px;
+}
+
+.currency-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.currency-box {
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currency-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.currency-name {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 8px;
+}
+
+.currency-value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.currency-symbol {
+  font-size: 24px;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+/* Currency box colors */
+.usd-box {
+  background-color: rgba(82, 196, 26, 0.1);
+  border-left: 3px solid #52c41a;
+}
+
+.uzs-box {
+  background-color: rgba(114, 46, 209, 0.1);
+  border-left: 3px solid #722ed1;
+}
+
+.rub-box {
+  background-color: rgba(24, 144, 255, 0.1);
+  border-left: 3px solid #1890ff;
+}
+
+.eur-box {
+  background-color: rgba(250, 140, 22, 0.1);
+  border-left: 3px solid #fa8c16;
+}
+
+/* Total box */
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: rgba(82, 196, 26, 0.1);
+  border-radius: 8px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.total-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #52c41a;
+}
+
+/* Analysis section */
+.analysis-section {
+  padding: 16px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.analysis-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.analysis-item {
+  margin-bottom: 20px;
+}
+
+.analysis-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.analysis-value {
+  font-weight: 500;
+}
+
+.result-item {
+  padding: 12px;
+  background-color: rgba(82, 196, 26, 0.1);
+  border-radius: 8px;
+  border-left: 3px solid #52c41a;
+  margin-top: 24px;
+}
+
+.positive-value {
+  color: #52c41a;
+  font-weight: bold;
+}
+
+.negative-value {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+/* Loading spinner */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.loading-text {
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .currency-boxes {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .stat-value {
+    font-size: 20px;
+  }
+  
+  .currency-value {
+    font-size: 18px;
+  }
+}
+
+/* Currency Cards */
+.currency-card {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.currency-card:hover {
+  transform: translateY(-5px);
+}
+
+.usd-card {
+  background: linear-gradient(135deg, #2196f3, #1976d2);
+  color: white;
+}
+
+.rub-card {
+  background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+  color: white;
+}
+
+.eur-card {
+  background: linear-gradient(135deg, #ff5722, #f4511e);
+  color: white;
+}
+
+.uzs-card {
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+  color: white;
+}
+
+.kzt-card {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+}
+
+.currency-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.currency-icon {
+  font-size: 24px;
+  opacity: 0.9;
+}
+
+.currency-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.currency-amount {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+} 

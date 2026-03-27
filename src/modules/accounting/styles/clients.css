@@ -1,0 +1,89 @@
+/* ClientModal.css */
+
+/* Modal sarlavha stilini o'zgartirish */
+.ant-modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Modal header stilini o'zgartirish */
+.ant-modal-header {
+    padding: 16px 24px;
+    background-color: #f9f9f9;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Modal content stilini o'zgartirish */
+.ant-modal-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Input stillarini o'zgartirish */
+.ant-input {
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.ant-input:hover {
+    border-color: #4096ff;
+}
+
+.ant-input:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Label stillarini o'zgartirish */
+.ant-form-item-label>label {
+    font-weight: 500;
+    color: #444;
+}
+
+/* Required yulduzchani o'zgartirish */
+.ant-form-item-required::before {
+    color: #ff4d4f !important;
+}
+
+/* Modal tugmalar qismini o'zgartirish */
+.ant-modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #f0f0f0;
+    border-radius: 0 0 8px 8px;
+}
+
+/* OK tugmasini o'zgartirish */
+.ant-btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    font-weight: 500;
+    height: 38px;
+    border-radius: 6px;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+/* Cancel tugmasini o'zgartirish */
+.ant-btn-default {
+    border-color: #d9d9d9;
+    color: #333;
+    height: 38px;
+    border-radius: 6px;
+}
+
+.ant-btn-default:hover,
+.ant-btn-default:focus {
+    color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+/* Loading holatidagi o'zgarishlar */
+.ant-btn-loading {
+    opacity: 0.8;
+}

@@ -1,0 +1,56 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f2f5; /* Yengil kulrang fon */
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .login-form:hover {
+    transform: scale(1.02);
+  }
+  
+  .login-form h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #343a40; /* Qora rang */
+  }
+  
+  .login-form p {
+    color: #6c757d; /* Kulrang */
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    border-radius: 8px;
+    border: 1px solid #ced4da; /* Yengil kulrang */
+    transition: border-color 0.3s;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff; /* Moviy rang */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .submit-button {
+    width: 100%;
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Moviy gradient */
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+  }
